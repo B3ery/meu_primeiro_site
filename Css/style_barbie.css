@@ -1,0 +1,190 @@
+/*Definições iniciais do estilo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #ffffff;
+}
+
+nav {
+    background-color: #ffafc7;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 80px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 15px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  #home{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 90px;
+    background-image: url("../img/header_img.jpg");
+  }
+
+  #home h2{
+    font-size: 1.9;
+    color: rgb(0, 0, 0);
+
+  }
+
+  #home p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  .botao {
+    padding:10px 30px;
+    background:#fa95b4 ;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .9em;
+    border-radius: 3px;
+    margin-top: 2%;
+}
+
+/*parte das bonecas*/
+.card-container-boneca{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 20px;
+  
+}
+.card-boneca{
+  margin-top: 5%;
+  color: #a50737;
+  padding: 20px;
+  box-shadow: 0 2px 4px #fa8b9e;
+  text-align: center;
+}
+
+.card-boneca img{
+max-width: 300px;
+height: 200px;  
+filter: grayscale(1);
+}
+.card-boneca img:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+/*fim das bonecas*/
+
+  h1{
+    color: #a50737;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 2%;
+    margin-top: 2%;
+}
+/*Estilos para o contêiner dos cartões*/
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    
+}
+
+/*Estilos para os cartões individuais*/
+.card{
+    background-color: #ffc3d5;
+    color: #a50737;
+    border: 1px solid #f87186;
+    padding: 20px;
+    box-shadow: 0 2px 4px #fa8b9e;
+}
+.Depoimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    }
+  
+
+    .Depoimento {
+    border: none;
+    background-color: #f87186;
+    border: 5px solid #a50737;
+    padding: 20px;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .Depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 5px solid #a50737;
+    }
+   
+ 
+    .Depoimento p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    }
+  
+   
+    .Depoimento span {
+    font-weight: bold;
+    color: white;
+    }
+
+    footer {
+      background-color: #ffafc7; 
+      color: white; 
+      text-align: center; 
+      padding: 1rem 0; 
+  }
+
+  footer img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+  }
+/*Estilos aplicados qunado a largura da tela é de no máximo 768px*/
+@media(max-width:768px){
+.card-container{
+    grid-template-columns: 1fr;
+}
+}
